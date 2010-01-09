@@ -2,9 +2,7 @@ class Membership < ActiveRecord::Base
 
   belongs_to :group
   belongs_to :user
-  
-  record_activity_of :user
-  
+    
   include AASM
   aasm_column :state
   aasm_initial_state :pending

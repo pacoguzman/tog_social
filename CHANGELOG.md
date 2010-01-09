@@ -1,5 +1,6 @@
 Edge
 ----
+* Removed record activity with acts_as_scribe. If you need record activities install tog_activity
 
 0.6.0
 ----

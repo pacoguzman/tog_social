@@ -38,7 +38,6 @@ class Group < ActiveRecord::Base
       :tiny   => Tog::Plugins.settings(:tog_social, "group.image.versions.tiny")
     }}.merge(Tog::Plugins.storage_options)
 
-  record_activity_of :author
   acts_as_abusable
   acts_as_taggable
   seo_urls
